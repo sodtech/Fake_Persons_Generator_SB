@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>736,4130.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>736,4183.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GenerateDetailsToExcel_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="31">
@@ -76,7 +76,7 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GenerateDetailsToExcel" sap:VirtualizedContainerService.HintSize="510.4,4025.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GenerateDetailsToExcel" sap:VirtualizedContainerService.HintSize="552,4118.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="NumberToGenerate" />
       <Variable x:TypeArguments="x:Boolean" Name="Check" />
@@ -91,8 +91,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BuildDataTable DataTable="[OutputDT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="468.8,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Full_x0020_Name&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Phone_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Email&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Role_x0020_in_x0020_Company&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Company_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Address&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:InterruptibleDoWhile DisplayName="To validate the input" sap:VirtualizedContainerService.HintSize="468.8,52.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+    <ui:BuildDataTable DataTable="[OutputDT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="510.4,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Full_x0020_Name&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Phone_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Email&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Role_x0020_in_x0020_Company&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Company_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Address&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:InterruptibleDoWhile DisplayName="To validate the input" sap:VirtualizedContainerService.HintSize="510.4,52.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
       <ui:InterruptibleDoWhile.Body>
         <Sequence DisplayName="To Validate If number" sap:VirtualizedContainerService.HintSize="375.2,520" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
@@ -186,297 +186,304 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InterruptibleDoWhile>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="468.8,3677.6" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.fakenamegenerator.com/">
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="510.4,3832.8" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.fakenamegenerator.com/">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <ui:InterruptibleDoWhile DisplayName="To generate for the number of input" sap:VirtualizedContainerService.HintSize="435.2,3575.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
-            <ui:InterruptibleDoWhile.Body>
-              <Sequence DisplayName="To generate Random Field" sap:VirtualizedContainerService.HintSize="400,3408" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                <Sequence.Variables>
-                  <Variable x:TypeArguments="x:String" Name="FullName" />
-                  <Variable x:TypeArguments="x:String" Name="PhoneNumber" />
-                  <Variable x:TypeArguments="x:String" Name="Address" />
-                  <Variable x:TypeArguments="x:String" Name="Role" />
-                  <Variable x:TypeArguments="x:String" Name="Email" />
-                  <Variable x:TypeArguments="x:String" Name="CountryName" />
-                  <Variable x:TypeArguments="x:String" Name="ExtractName" />
-                  <Variable x:TypeArguments="x:String" Name="ExtractAddress" />
-                  <Variable x:TypeArguments="x:String" Name="extractPhone" />
-                  <Variable x:TypeArguments="x:String" Name="ExtracrRole" />
-                  <Variable x:TypeArguments="x:String" Name="ExtractEmail" />
-                  <Variable x:TypeArguments="x:String" Name="ExtractCountry" />
-                </Sequence.Variables>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="358.4,22.4" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-                <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke ToMapNumber workflow" sap:VirtualizedContainerService.HintSize="358.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Project\ToGenerateRandomGender.xaml">
-                  <ui:InvokeWorkflowFile.Arguments>
-                    <OutArgument x:TypeArguments="x:String" x:Key="out_Gender">[Gender]</OutArgument>
-                  </ui:InvokeWorkflowFile.Arguments>
-                </ui:InvokeWorkflowFile>
-                <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke ToGenerateRandomCountry workflow" sap:VirtualizedContainerService.HintSize="358.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Project\ToGenerateRandomCountry.xaml">
-                  <ui:InvokeWorkflowFile.Arguments>
-                    <OutArgument x:TypeArguments="x:String" x:Key="out_Country">[CountryName]</OutArgument>
-                  </ui:InvokeWorkflowFile.Arguments>
-                </ui:InvokeWorkflowFile>
-                <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke ToGenerateRandomNameSet workflow" sap:VirtualizedContainerService.HintSize="358.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Project\ToGenerateRandomNameSet.xaml">
-                  <ui:InvokeWorkflowFile.Arguments>
-                    <OutArgument x:TypeArguments="x:String" x:Key="out_SetName">[SetName]</OutArgument>
-                  </ui:InvokeWorkflowFile.Arguments>
-                </ui:InvokeWorkflowFile>
-                <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="358.4,22.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
-                <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select gender" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="[Gender]">
-                  <ui:SelectItem.Items>
-                    <scg:List x:TypeArguments="x:String" Capacity="4">
-                      <x:String>Random</x:String>
-                      <x:String>Male</x:String>
-                      <x:String>Female</x:String>
-                    </scg:List>
-                  </ui:SelectItem.Items>
-                  <ui:SelectItem.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="37f6c5e1-7326-4210-9be1-112c9dff2435" InformativeScreenshot="13d52510b60ace6fe77a76bd6844f05d" Selector="&lt;html app='chrome.exe' title='Generate *' /&gt;&lt;webctrl id='gen' tag='SELECT' aaname='Gender' name='gen' parentclass='content' parentid='options' /&gt;">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
-                    </ui:Target>
-                  </ui:SelectItem.Target>
-                </ui:SelectItem>
-                <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item set name" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="[SetName]">
-                  <ui:SelectItem.Items>
-                    <scg:List x:TypeArguments="x:String" Capacity="4">
-                      <x:String>Random</x:String>
-                      <x:String>Male</x:String>
-                      <x:String>Female</x:String>
-                    </scg:List>
-                  </ui:SelectItem.Items>
-                  <ui:SelectItem.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="37f6c5e1-7326-4210-9be1-112c9dff2435" InformativeScreenshot="13d52510b60ace6fe77a76bd6844f05d" Selector="&lt;webctrl id='n' tag='SELECT' aaname='Name set' name='n' parentclass='content' parentid='options' /&gt;">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
-                    </ui:Target>
-                  </ui:SelectItem.Target>
-                </ui:SelectItem>
-                <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item country" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_3" Item="[CountryName]">
-                  <ui:SelectItem.Items>
-                    <scg:List x:TypeArguments="x:String" Capacity="4">
-                      <x:String>Random</x:String>
-                      <x:String>Male</x:String>
-                      <x:String>Female</x:String>
-                    </scg:List>
-                  </ui:SelectItem.Items>
-                  <ui:SelectItem.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="37f6c5e1-7326-4210-9be1-112c9dff2435" InformativeScreenshot="13d52510b60ace6fe77a76bd6844f05d" Selector="&lt;webctrl id='c' tag='SELECT' aaname='Country' name='c' parentclass='content' parentid='options' /&gt;&#xA;">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
-                    </ui:Target>
-                  </ui:SelectItem.Target>
-                </ui:SelectItem>
-                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="click the generate button" sap:VirtualizedContainerService.HintSize="358.4,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
-                  <ui:Click.CursorPosition>
-                    <ui:CursorPosition Position="Center">
-                      <ui:CursorPosition.OffsetX>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:CursorPosition.OffsetX>
-                      <ui:CursorPosition.OffsetY>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:CursorPosition.OffsetY>
-                    </ui:CursorPosition>
-                  </ui:Click.CursorPosition>
-                  <ui:Click.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dac0ca11-3096-4c34-9bbf-14c2b00c0ae2" InformativeScreenshot="35012cb244c201ea33c116d1874609a4" Selector="&lt;webctrl tag='INPUT' type='submit' /&gt;">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
-                    </ui:Target>
-                  </ui:Click.Target>
-                </ui:Click>
-                <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="358.4,22.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Name" sap:VirtualizedContainerService.HintSize="358.4,107.2" sap2010:WorkflowViewState.IdRef="GetValue_6">
-                  <ui:GetValue.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7c239291-10e6-4771-a76b-c58e7a8cf91e" InformativeScreenshot="dd63e56f6decf6c2968d44e970cc33cd" Selector="&lt;webctrl idx='1' tag='H3' /&gt;">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
-                    </ui:Target>
-                  </ui:GetValue.Target>
-                  <ui:GetValue.Value>
-                    <OutArgument x:TypeArguments="x:String">[ExtractName]</OutArgument>
-                  </ui:GetValue.Value>
-                </ui:GetValue>
-                <Assign DisplayName="name" sap:VirtualizedContainerService.HintSize="358.4,60" sap2010:WorkflowViewState.IdRef="Assign_6">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="x:String">[FullName]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="x:String">[ExtractName.Trim]</InArgument>
-                  </Assign.Value>
-                </Assign>
-                <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Address" sap:VirtualizedContainerService.HintSize="358.4,107.2" sap2010:WorkflowViewState.IdRef="GetValue_7">
-                  <ui:GetValue.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c1979840-9756-4423-adea-0b47550f53f3" InformativeScreenshot="21778ae73f7102dab91ea02e9a529e8a" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='details' tag='DIV' /&gt;">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
-                    </ui:Target>
-                  </ui:GetValue.Target>
-                  <ui:GetValue.Value>
-                    <OutArgument x:TypeArguments="x:String">[ExtractAddress]</OutArgument>
-                  </ui:GetValue.Value>
-                </ui:GetValue>
-                <Assign DisplayName="address" sap:VirtualizedContainerService.HintSize="358.4,60" sap2010:WorkflowViewState.IdRef="Assign_7">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="x:String">[Address]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="x:String">[ExtractAddress.Trim]</InArgument>
-                  </Assign.Value>
-                </Assign>
-                <ui:GetValue ContinueOnError="{x:Null}" DisplayName="get phone number" sap:VirtualizedContainerService.HintSize="358.4,107.2" sap2010:WorkflowViewState.IdRef="GetValue_8">
-                  <ui:GetValue.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="baa5dd4b-5a95-4c25-8bec-37ea7e0da1c6" InformativeScreenshot="0926d61ab250cfe7d4b8f7264204406c" Selector="&lt;webctrl idx='2' isleaf='1' tag='DD' /&gt;">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
-                    </ui:Target>
-                  </ui:GetValue.Target>
-                  <ui:GetValue.Value>
-                    <OutArgument x:TypeArguments="x:String">[extractPhone]</OutArgument>
-                  </ui:GetValue.Value>
-                </ui:GetValue>
-                <Assign DisplayName="phone number" sap:VirtualizedContainerService.HintSize="358.4,60" sap2010:WorkflowViewState.IdRef="Assign_8">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="x:String">[PhoneNumber]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="x:String">[extractPhone.Trim]</InArgument>
-                  </Assign.Value>
-                </Assign>
-                <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Role" sap:VirtualizedContainerService.HintSize="358.4,107.2" sap2010:WorkflowViewState.IdRef="GetValue_9">
-                  <ui:GetValue.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="baa5dd4b-5a95-4c25-8bec-37ea7e0da1c6" InformativeScreenshot="6e910ee2d30a973d7a4d57ef804a1d86" Selector="&lt;webctrl idx='15' isleaf='1' tag='DD' /&gt;">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
-                    </ui:Target>
-                  </ui:GetValue.Target>
-                  <ui:GetValue.Value>
-                    <OutArgument x:TypeArguments="x:String">[ExtracrRole]</OutArgument>
-                  </ui:GetValue.Value>
-                </ui:GetValue>
-                <Assign DisplayName="Role" sap:VirtualizedContainerService.HintSize="358.4,60" sap2010:WorkflowViewState.IdRef="Assign_9">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="x:String">[Role]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="x:String">[ExtracrRole.Trim]</InArgument>
-                  </Assign.Value>
-                </Assign>
-                <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="get Email" sap:VirtualizedContainerService.HintSize="358.4,107.2" sap2010:WorkflowViewState.IdRef="GetFullText_1">
-                  <ui:GetFullText.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0aef20b4-8907-4d4a-91c3-20e1c1926220" InformativeScreenshot="f83a3dd884ca61d92939c9a5bff6ff5c" Selector="&lt;webctrl tag='DD' idx='9' /&gt;">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
-                    </ui:Target>
-                  </ui:GetFullText.Target>
-                  <ui:GetFullText.Text>
-                    <OutArgument x:TypeArguments="x:String">[ExtractEmail]</OutArgument>
-                  </ui:GetFullText.Text>
-                </ui:GetFullText>
-                <Assign DisplayName="Email" sap:VirtualizedContainerService.HintSize="358.4,60" sap2010:WorkflowViewState.IdRef="Assign_10">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="x:String">[Email]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="x:String">[ExtractEmail.Trim]</InArgument>
-                  </Assign.Value>
-                </Assign>
-                <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Countrry" sap:VirtualizedContainerService.HintSize="358.4,107.2" sap2010:WorkflowViewState.IdRef="GetValue_11">
-                  <ui:GetValue.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="baa5dd4b-5a95-4c25-8bec-37ea7e0da1c6" InformativeScreenshot="ed59e571334c91bd250b7f565e81359b" Selector="&lt;webctrl idx='14' isleaf='1' tag='DD' /&gt;">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
-                    </ui:Target>
-                  </ui:GetValue.Target>
-                  <ui:GetValue.Value>
-                    <OutArgument x:TypeArguments="x:String">[ExtractCountry]</OutArgument>
-                  </ui:GetValue.Value>
-                </ui:GetValue>
-                <Assign DisplayName="country" sap:VirtualizedContainerService.HintSize="358.4,60" sap2010:WorkflowViewState.IdRef="Assign_11">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="x:String">[Country]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="x:String">[ExtractCountry.Trim]</InArgument>
-                  </Assign.Value>
-                </Assign>
-                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{fullName,PhoneNumber,Email,Role,CountryName,Address}]" DataTable="[OutputDT]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="358.4,22.4" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-                <Assign sap:VirtualizedContainerService.HintSize="358.4,60" sap2010:WorkflowViewState.IdRef="Assign_12">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="x:String">[out_FileName]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="x:String">["Data/"+ in_Config("File_Name").ToString + Now.ToString("dd-MM-yy") +".xlsx"]</InArgument>
-                  </Assign.Value>
-                </Assign>
-                <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[OutputDT]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="358.4,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="[out_FileName]" />
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="358.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[FullName +vbNewLine +&#xA;PhoneNumber +vbNewLine+&#xA;Role  +vbNewLine+ &#xA;Email +vbNewLine +&#xA;Address + vbNewLine+&#xA;CountryName]" />
-                <Assign sap:VirtualizedContainerService.HintSize="358.4,60" sap2010:WorkflowViewState.IdRef="Assign_5">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="x:Int32">[NumberToInt]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="x:Int32">[NumberToInt - 1]</InArgument>
-                  </Assign.Value>
-                </Assign>
-              </Sequence>
-            </ui:InterruptibleDoWhile.Body>
-            <ui:InterruptibleDoWhile.Condition>
-              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="NumberToInt &gt; 0" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_3" />
-            </ui:InterruptibleDoWhile.Condition>
-          </ui:InterruptibleDoWhile>
+          <Sequence sap:VirtualizedContainerService.HintSize="476.8,3730.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InterruptibleDoWhile DisplayName="To generate for the number of input" sap:VirtualizedContainerService.HintSize="435.2,3575.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+              <ui:InterruptibleDoWhile.Body>
+                <Sequence DisplayName="To generate Random Field" sap:VirtualizedContainerService.HintSize="400,3408" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="FullName" />
+                    <Variable x:TypeArguments="x:String" Name="PhoneNumber" />
+                    <Variable x:TypeArguments="x:String" Name="Address" />
+                    <Variable x:TypeArguments="x:String" Name="Role" />
+                    <Variable x:TypeArguments="x:String" Name="Email" />
+                    <Variable x:TypeArguments="x:String" Name="CountryName" />
+                    <Variable x:TypeArguments="x:String" Name="ExtractName" />
+                    <Variable x:TypeArguments="x:String" Name="ExtractAddress" />
+                    <Variable x:TypeArguments="x:String" Name="extractPhone" />
+                    <Variable x:TypeArguments="x:String" Name="ExtracrRole" />
+                    <Variable x:TypeArguments="x:String" Name="ExtractEmail" />
+                    <Variable x:TypeArguments="x:String" Name="ExtractCountry" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="358.4,22.4" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke ToMapNumber workflow" sap:VirtualizedContainerService.HintSize="358.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Project\ToGenerateRandomGender.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_Gender">[Gender]</OutArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke ToGenerateRandomCountry workflow" sap:VirtualizedContainerService.HintSize="358.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Project\ToGenerateRandomCountry.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_Country">[CountryName]</OutArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke ToGenerateRandomNameSet workflow" sap:VirtualizedContainerService.HintSize="358.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Project\ToGenerateRandomNameSet.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_SetName">[SetName]</OutArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                  <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="358.4,22.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                  <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select gender" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="[Gender]">
+                    <ui:SelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="4">
+                        <x:String>Random</x:String>
+                        <x:String>Male</x:String>
+                        <x:String>Female</x:String>
+                      </scg:List>
+                    </ui:SelectItem.Items>
+                    <ui:SelectItem.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="37f6c5e1-7326-4210-9be1-112c9dff2435" InformativeScreenshot="13d52510b60ace6fe77a76bd6844f05d" Selector="&lt;html app='chrome.exe' title='Generate *' /&gt;&lt;webctrl id='gen' tag='SELECT' aaname='Gender' name='gen' parentclass='content' parentid='options' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:SelectItem.Target>
+                  </ui:SelectItem>
+                  <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item set name" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="[SetName]">
+                    <ui:SelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="4">
+                        <x:String>Random</x:String>
+                        <x:String>Male</x:String>
+                        <x:String>Female</x:String>
+                      </scg:List>
+                    </ui:SelectItem.Items>
+                    <ui:SelectItem.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="37f6c5e1-7326-4210-9be1-112c9dff2435" InformativeScreenshot="13d52510b60ace6fe77a76bd6844f05d" Selector="&lt;webctrl id='n' tag='SELECT' aaname='Name set' name='n' parentclass='content' parentid='options' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:SelectItem.Target>
+                  </ui:SelectItem>
+                  <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item country" sap:VirtualizedContainerService.HintSize="358.4,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_3" Item="[CountryName]">
+                    <ui:SelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="4">
+                        <x:String>Random</x:String>
+                        <x:String>Male</x:String>
+                        <x:String>Female</x:String>
+                      </scg:List>
+                    </ui:SelectItem.Items>
+                    <ui:SelectItem.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="37f6c5e1-7326-4210-9be1-112c9dff2435" InformativeScreenshot="13d52510b60ace6fe77a76bd6844f05d" Selector="&lt;webctrl id='c' tag='SELECT' aaname='Country' name='c' parentclass='content' parentid='options' /&gt;&#xA;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:SelectItem.Target>
+                  </ui:SelectItem>
+                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="click the generate button" sap:VirtualizedContainerService.HintSize="358.4,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dac0ca11-3096-4c34-9bbf-14c2b00c0ae2" InformativeScreenshot="35012cb244c201ea33c116d1874609a4" Selector="&lt;webctrl tag='INPUT' type='submit' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:Click.Target>
+                  </ui:Click>
+                  <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="358.4,22.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Name" sap:VirtualizedContainerService.HintSize="358.4,107.2" sap2010:WorkflowViewState.IdRef="GetValue_6">
+                    <ui:GetValue.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7c239291-10e6-4771-a76b-c58e7a8cf91e" InformativeScreenshot="dd63e56f6decf6c2968d44e970cc33cd" Selector="&lt;webctrl idx='1' tag='H3' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:GetValue.Target>
+                    <ui:GetValue.Value>
+                      <OutArgument x:TypeArguments="x:String">[ExtractName]</OutArgument>
+                    </ui:GetValue.Value>
+                  </ui:GetValue>
+                  <Assign DisplayName="name" sap:VirtualizedContainerService.HintSize="358.4,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[FullName]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[ExtractName.Trim]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Address" sap:VirtualizedContainerService.HintSize="358.4,107.2" sap2010:WorkflowViewState.IdRef="GetValue_7">
+                    <ui:GetValue.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c1979840-9756-4423-adea-0b47550f53f3" InformativeScreenshot="21778ae73f7102dab91ea02e9a529e8a" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='details' tag='DIV' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:GetValue.Target>
+                    <ui:GetValue.Value>
+                      <OutArgument x:TypeArguments="x:String">[ExtractAddress]</OutArgument>
+                    </ui:GetValue.Value>
+                  </ui:GetValue>
+                  <Assign DisplayName="address" sap:VirtualizedContainerService.HintSize="358.4,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[Address]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[ExtractAddress.Trim]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:GetValue ContinueOnError="{x:Null}" DisplayName="get phone number" sap:VirtualizedContainerService.HintSize="358.4,107.2" sap2010:WorkflowViewState.IdRef="GetValue_8">
+                    <ui:GetValue.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="baa5dd4b-5a95-4c25-8bec-37ea7e0da1c6" InformativeScreenshot="0926d61ab250cfe7d4b8f7264204406c" Selector="&lt;webctrl idx='2' isleaf='1' tag='DD' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:GetValue.Target>
+                    <ui:GetValue.Value>
+                      <OutArgument x:TypeArguments="x:String">[extractPhone]</OutArgument>
+                    </ui:GetValue.Value>
+                  </ui:GetValue>
+                  <Assign DisplayName="phone number" sap:VirtualizedContainerService.HintSize="358.4,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[PhoneNumber]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[extractPhone.Trim]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Role" sap:VirtualizedContainerService.HintSize="358.4,107.2" sap2010:WorkflowViewState.IdRef="GetValue_9">
+                    <ui:GetValue.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="baa5dd4b-5a95-4c25-8bec-37ea7e0da1c6" InformativeScreenshot="6e910ee2d30a973d7a4d57ef804a1d86" Selector="&lt;webctrl idx='15' isleaf='1' tag='DD' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:GetValue.Target>
+                    <ui:GetValue.Value>
+                      <OutArgument x:TypeArguments="x:String">[ExtracrRole]</OutArgument>
+                    </ui:GetValue.Value>
+                  </ui:GetValue>
+                  <Assign DisplayName="Role" sap:VirtualizedContainerService.HintSize="358.4,60" sap2010:WorkflowViewState.IdRef="Assign_9">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[Role]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[ExtracrRole.Trim]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="get Email" sap:VirtualizedContainerService.HintSize="358.4,107.2" sap2010:WorkflowViewState.IdRef="GetFullText_1">
+                    <ui:GetFullText.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0aef20b4-8907-4d4a-91c3-20e1c1926220" InformativeScreenshot="f83a3dd884ca61d92939c9a5bff6ff5c" Selector="&lt;webctrl tag='DD' idx='9' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:GetFullText.Target>
+                    <ui:GetFullText.Text>
+                      <OutArgument x:TypeArguments="x:String">[ExtractEmail]</OutArgument>
+                    </ui:GetFullText.Text>
+                  </ui:GetFullText>
+                  <Assign DisplayName="Email" sap:VirtualizedContainerService.HintSize="358.4,60" sap2010:WorkflowViewState.IdRef="Assign_10">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[Email]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[ExtractEmail.Trim]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Countrry" sap:VirtualizedContainerService.HintSize="358.4,107.2" sap2010:WorkflowViewState.IdRef="GetValue_11">
+                    <ui:GetValue.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="baa5dd4b-5a95-4c25-8bec-37ea7e0da1c6" InformativeScreenshot="ed59e571334c91bd250b7f565e81359b" Selector="&lt;webctrl idx='14' isleaf='1' tag='DD' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:GetValue.Target>
+                    <ui:GetValue.Value>
+                      <OutArgument x:TypeArguments="x:String">[ExtractCountry]</OutArgument>
+                    </ui:GetValue.Value>
+                  </ui:GetValue>
+                  <Assign DisplayName="country" sap:VirtualizedContainerService.HintSize="358.4,60" sap2010:WorkflowViewState.IdRef="Assign_11">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[Country]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[ExtractCountry.Trim]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{fullName,PhoneNumber,Email,Role,CountryName,Address}]" DataTable="[OutputDT]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="358.4,22.4" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                  <Assign sap:VirtualizedContainerService.HintSize="358.4,60" sap2010:WorkflowViewState.IdRef="Assign_12">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[out_FileName]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">["Data/"+ in_Config("File_Name").ToString + Now.ToString("dd-MM-yy") +".xlsx"]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[OutputDT]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="358.4,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="[out_FileName]" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="358.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[FullName +vbNewLine +&#xA;PhoneNumber +vbNewLine+&#xA;Role  +vbNewLine+ &#xA;Email +vbNewLine +&#xA;Address + vbNewLine+&#xA;CountryName]" />
+                  <Assign sap:VirtualizedContainerService.HintSize="358.4,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[NumberToInt]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[NumberToInt - 1]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </ui:InterruptibleDoWhile.Body>
+              <ui:InterruptibleDoWhile.Condition>
+                <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="NumberToInt &gt; 0" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_3" />
+              </ui:InterruptibleDoWhile.Condition>
+            </ui:InterruptibleDoWhile>
+            <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="435.2,22.4" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
+          </Sequence>
         </ActivityAction>
       </ui:OpenBrowser.Body>
     </ui:OpenBrowser>
-    <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="468.8,22.4" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
   </Sequence>
 </Activity>
